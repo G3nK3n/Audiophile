@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap');
+
 .HomeContainer {
-    padding: 0px 70px;
+    padding: 0px 100px;
 }
 
 .MainBody {
@@ -15,12 +17,13 @@
 .MainDiv {
     width: 398px;
     height: 346px;
+    margin-top:220px;
 }
 
 .MainDiv h1 {
-    font-family: 'Public Sans', sans-serif;
+    /* font-family: 'Manrope'; */
     color: white;
-    font-weight:700;
+    /* font-weight:700; */
     font-size: 56px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -28,22 +31,34 @@
 }
 
 .MainBodyDescription {
-    font-family: 'Manrope';
-    font-weight: 500;
+    /* font-family: 'Manrope'; */
+    /* font-weight: 500; */
     color: white;
     font-size: 15px;
     width: 349px;
     opacity: 0.75;
+    margin-top:20px;
 }
 
 .TopTitle {
     color: white;
     opacity: 0.5;
 
-    font-family: 'Manrope';
+    /* font-family: 'Manrope'; */
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 10px;
+}
+
+.MainBody button {
+    border-radius: 0px;
+    background: #D87D4A;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-color: #D87D4A;
+    padding: 12px 30.5px;
+    margin-top:20px;
 }
 
 /* .HeadphonesImage {

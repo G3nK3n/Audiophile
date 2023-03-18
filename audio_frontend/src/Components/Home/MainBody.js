@@ -4,6 +4,8 @@ import classes from './MainBody.module.css';
 import Container from "react-bootstrap/Container";
 import { Row, Col, Button } from "react-bootstrap";
 
+import Headers from "../Header/Headers";
+
 import Img1 from '../../image-header.jpg';
 
 
@@ -11,6 +13,7 @@ const MainBody = () => {
     return(
         <div className={classes.MainBody}>
             <Container className={classes.HomeContainer}>
+                <Headers />
                 <Row>
                     <Col>
                         <div className={classes.MainDiv}>
@@ -21,11 +24,6 @@ const MainBody = () => {
                                 made for the passionate music enthusiast.
                             </p>
                             <Button>See Product</Button>
-                        </div>
-                    </Col>
-                    <Col>
-                        <div className={classes.HeadphonesImage}>
-                            
                         </div>
                     </Col>
                 </Row>

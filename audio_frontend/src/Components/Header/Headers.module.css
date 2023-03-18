@@ -1,0 +1,22 @@
+.HeaderDiv {
+    text-align: center;
+}
+
+.Logo {
+    float: left;
+}
+
+.Links {
+    text-align: center;
+    color: white;
+    display: inline-block;
+}
+
+.Links ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+.Cart {
+    float: right;
+}
