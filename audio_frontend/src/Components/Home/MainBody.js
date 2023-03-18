@@ -13,10 +13,10 @@ const MainBody = () => {
             <Container className={classes.HomeContainer}>
                 <Row>
                     <Col>
-                        <div>
-                            <p>New Product</p>
+                        <div className={classes.MainDiv}>
+                            <p className={classes.TopTitle}>New Product</p>
                             <h1>XX99 MARK II <br/> HEADPHONES</h1>
-                            <p>
+                            <p className={classes.MainBodyDescription}>
                                 Experience natural, lifelike audio and exceptional build quality
                                 made for the passionate music enthusiast.
                             </p>

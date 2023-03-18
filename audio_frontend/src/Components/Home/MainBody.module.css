@@ -12,6 +12,40 @@
     height: 729px;
 }
 
+.MainDiv {
+    width: 398px;
+    height: 346px;
+}
+
+.MainDiv h1 {
+    font-family: 'Public Sans', sans-serif;
+    color: white;
+    font-weight:700;
+    font-size: 56px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 58px;
+}
+
+.MainBodyDescription {
+    font-family: 'Manrope';
+    font-weight: 500;
+    color: white;
+    font-size: 15px;
+    width: 349px;
+    opacity: 0.75;
+}
+
+.TopTitle {
+    color: white;
+    opacity: 0.5;
+
+    font-family: 'Manrope';
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 10px;
+}
+
 /* .HeadphonesImage {
     background: url('../../image-hero.jpg');
     background-repeat: no-repeat;
