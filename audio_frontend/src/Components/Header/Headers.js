@@ -17,10 +17,10 @@ const Headers = () => {
                         </div>
                         <div className={classes.Links}>
                             <ul>
-                                <li>Home</li>
-                                <li>Headphones</li>
-                                <li>Speakers</li>
-                                <li>Earphones</li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Headphones</a></li>
+                                <li><a href="#">Speakers</a></li>
+                                <li><a href="#">Earphones</a></li>
                             </ul>
                         </div>
                         <div className={classes.Cart}>

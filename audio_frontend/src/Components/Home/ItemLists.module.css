@@ -1,0 +1,39 @@
+.ItemsListContainer {
+    padding: 0px 100px;
+}
+
+.ItemsLists {
+    width: 350px;
+    height: 204px;
+    background-color: #F1F1F1;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.ItemsListsInner {
+    padding-top: 120px;
+}
+
+.ItemsLists h3{
+    text-transform: uppercase;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+}
+
+.ItemsLists a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    opacity: 0.5;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.ItemsListsThumb {
+    width: 162.95px;
+    height: 160px;
+}
+
+.ArrowIcon {
+    margin-left: 10px;
+}

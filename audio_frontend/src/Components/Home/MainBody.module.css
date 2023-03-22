@@ -61,6 +61,11 @@
     margin-top:20px;
 }
 
+.MainBody button:hover {
+    background-color: #FBAF85;
+    border-color: #FBAF85;
+}
+
 /* .HeadphonesImage {
     background: url('../../image-hero.jpg');
     background-repeat: no-repeat;

@@ -4,7 +4,7 @@
     text-align: center;
     padding: 30px 0px 20px 0px;
     border-bottom: 1px solid;
-    border-bottom-color: white;
+    border-bottom-color: rgba(255, 255, 255, 0.2);
 }
 
 .Logo {
@@ -30,6 +30,15 @@
     font-size: 13px;
     letter-spacing: 2.5px;
     margin-right:35px;
+}
+
+.Links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.Links ul li a:hover {
+    color: #d87d4a;
 }
 
 .Cart {
