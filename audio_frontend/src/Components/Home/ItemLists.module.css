@@ -8,6 +8,13 @@
     background-color: #F1F1F1;
     text-align: center;
     margin-top: 200px;
+    display: inline-block;
+    margin-right: 35px;
+    margin-bottom: 168px;
+}
+
+.ItemsLists:last-child {
+    margin-right: 0px;
 }
 
 .ItemsListsInner {
@@ -29,11 +36,37 @@
     font-weight: 500;
 }
 
-.ItemsListsThumb {
-    width: 162.95px;
-    height: 160px;
+.ItemsListsEarphones, .ItemsListsHeadphones, .ItemsListsSpeakers {
+    position: absolute;
+}
+
+.ItemsListsHeadphones {
+    width: 212.95px;
+    height: 210px;
+    bottom: -155px;
+    left: 215px;
+}
+
+.ItemsListsSpeakers {
+    width: 212.95px;
+    height: 210px;
+    bottom: -165px;
+    left: 603px;
+}
+
+.ItemsListsEarphones {
+    width: 203.95px;
+    height: 180px;
+    bottom: -152px;
+    right: 225px;
 }
 
 .ArrowIcon {
     margin-left: 10px;
+}
+
+.ZX9SpeakerSection {
+    width: 1120px;
+    height: 560px;
+    background-color: #D87D4A;
 }
