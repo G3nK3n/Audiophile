@@ -8,6 +8,7 @@ import RightArrowIcon from '../../icon-arrow-right.svg';
 import HeadphonesThumbnail from '../../image-category-thumbnail-headphones.png';
 import SpeakersThumbnail from '../../image-category-thumbnail-speakers.png';
 import EarphonesThumbnail from '../../image-category-thumbnail-earphones.png';
+import ZX9 from '../../image-speaker-zx9.png';
 
 const ItemList = () => {
     return(
@@ -43,7 +44,23 @@ const ItemList = () => {
                 <Row>
                     <Col>
                         <div className={classes.ZX9SpeakerSection}>
-
+                            <img src={ZX9} className={classes.ZX9Image}/>
+                            <div className={classes.ZX9Description}>
+                                <h1>ZX9 Speaker</h1>
+                                <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
+                                <Button>See Product</Button>
+                            </div>
+                        </div>
+                        
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <div className={classes.ZX7SpeakerSection}>
+                            <div className={classes.ZX7Speaker}>
+                                <h2>ZX7 Speaker</h2>
+                                <Button>See Product</Button>
+                            </div>
                         </div>
                     </Col>
                 </Row>
