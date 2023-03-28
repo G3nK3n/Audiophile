@@ -9,6 +9,7 @@ import HeadphonesThumbnail from '../../image-category-thumbnail-headphones.png';
 import SpeakersThumbnail from '../../image-category-thumbnail-speakers.png';
 import EarphonesThumbnail from '../../image-category-thumbnail-earphones.png';
 import ZX9 from '../../image-speaker-zx9.png';
+import YX1 from '../../image-earphones-yx1.jpg';
 
 const ItemList = () => {
     return(
@@ -59,6 +60,21 @@ const ItemList = () => {
                         <div className={classes.ZX7SpeakerSection}>
                             <div className={classes.ZX7Speaker}>
                                 <h2>ZX7 Speaker</h2>
+                                <Button>See Product</Button>
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <div className={classes.YX1Image}>
+                            <img src={YX1} />
+                        </div>
+                    </Col>
+                    <Col>
+                        <div className={classes.YX1Section}>
+                            <div className={classes.YX1Earphones}>
+                                <h2>YX1 Earphones</h2>
                                 <Button>See Product</Button>
                             </div>
                         </div>
