@@ -1,0 +1,73 @@
+.FooterOuterDiv {
+    background-color: #101010;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.FooterContainer {
+    padding: 0px 100px;
+}
+
+.FooterDescription {
+    margin-top: 30px;
+    color: white;
+    opacity:0.5;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 15px;
+    width: 515px;
+}
+
+.Copyright {
+    color: white;
+    opacity: 0.5;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.Links {
+    text-align: right;
+    color: white;
+}
+
+.Links ul, .Socials ul {
+    list-style: none;
+    display: inline-flex;
+    padding-left: 0px;
+}
+
+.Links ul li {
+    font-family: 'Public Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight:700;
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    margin-right:35px;
+}
+
+.Links ul li:last-child {
+    margin-right:0px;
+}
+
+.Links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Figure out how to change the images to ornage */
+.Links ul li a:hover, .Socials ul li img:hover {
+    color: #d87d4a;
+}
+
+.Socials {
+    margin-top: 70px;
+    text-align: right;
+}
+
+.Socials ul li{
+    margin-right: 20px;
+}
+
+.Socials ul li:last-child {
+    margin-right: 0px;
+}

@@ -1,0 +1,136 @@
+.Headphones_MainBody_Container {
+    padding: 0px 100px;
+}
+
+.HeadphonesSeperator {
+    display: flex;
+    margin-top: 150px;
+}
+
+.Headphones img {
+    width: 540px;
+    height: 560px;
+}
+
+.MainDiv {
+    height: 346px;
+    margin-top:110px;
+    margin-left: 100px;
+}
+
+.MainDivOpposite {
+    height: 346px;
+    margin-top:110px;
+    margin-right: 100px;
+}
+
+.MainDiv h1 {
+    /* font-family: 'Manrope'; */
+    color: black;
+    /* font-weight:700; */
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1.42857px;
+    line-height: 44px;
+}
+
+.MainBodyDescription {
+    /* font-family: 'Manrope'; */
+    /* font-weight: 500; */
+    color: black;
+    font-size: 15px;
+    /* width: 349px; */
+    opacity: 0.5;
+    margin-top:20px;
+}
+
+.TopTitle {
+    color: #D87D4A;
+    opacity: 0.5;
+
+    /* font-family: 'Manrope'; */
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 10px;
+}
+
+.MainDiv button, .MainDivOpposite button {
+    border-radius: 0px;
+    background: #D87D4A;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-color: #D87D4A;
+    padding: 12px 30.5px;
+    margin-top:20px;
+}
+
+.MainDiv button:hover, .MainDivOpposite button:hover {
+    background-color: #FBAF85;
+    border-color: #FBAF85;
+}
+
+/* ----- */
+
+.ItemsLists {
+    width: 350px;
+    height: 204px;
+    background-color: #F1F1F1;
+    text-align: center;
+    margin-top: 200px;
+    display: inline-block;
+    margin-right: 35px;
+    margin-bottom: 168px;
+}
+
+.ItemsLists:last-child {
+    margin-right: 0px;
+}
+
+.ItemsListsInner {
+    padding-top: 120px;
+}
+
+.ItemsLists h3{
+    text-transform: uppercase;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+}
+
+.ItemsLists a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    opacity: 0.5;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.ItemsListsEarphones, .ItemsListsHeadphones, .ItemsListsSpeakers {
+    position: absolute;
+}
+
+.ItemsListsHeadphones {
+    width: 212.95px;
+    height: 210px;
+    bottom: -2030px;
+    left: 226px;
+}
+
+.ItemsListsSpeakers {
+    width: 212.95px;
+    height: 210px;
+    bottom: -2030px;
+    left: 614px;
+}
+
+.ItemsListsEarphones {
+    width: 203.95px;
+    height: 180px;
+    bottom: -2025px;
+    right: 235px;
+}
+
+.ArrowIcon {
+    margin-left: 10px;
+}
