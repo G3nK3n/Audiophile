@@ -9,7 +9,6 @@ const Headphones_Lists = () => {
             <Headphones_Lists_Title />
             <Headphones_Lists_MainBody />
             <BottomSection />
-
         </div>
     )
 }
