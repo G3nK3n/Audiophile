@@ -13,8 +13,17 @@ import SpeakersThumbnail from '../../image-category-thumbnail-speakers.png';
 import EarphonesThumbnail from '../../image-category-thumbnail-earphones.png';
 import RightArrowIcon from '../../icon-arrow-right.svg';
 
+import { Link, useNavigate } from 'react-router-dom';
+
 
 const Headphones_Lists_MainBody = () => {
+
+    let navigate = useNavigate();
+    const xx99MarkIIRoute = () => {
+        let path = "/headphones/xx99MarkII";
+        navigate(path);
+    }
+
     return(
         <div>
             <Container className={classes.Headphones_MainBody_Container}>
@@ -33,7 +42,7 @@ const Headphones_Lists_MainBody = () => {
                                     The new XX99 Mark II headphones is the pinnacle of pristine audio.
                                     It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.
                                 </p>
-                                <Button>See Product</Button>
+                                <Button onClick={xx99MarkIIRoute}>See Product</Button>
                             </div>
                         </Col>
                     </div>

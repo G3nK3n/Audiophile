@@ -1,0 +1,207 @@
+.Headers {
+    background-color: #101010;
+}
+
+.BackLink a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+.BackLink {
+    margin: 80px 0 60px 0;
+}
+
+.Headphones_MainBody_Container {
+    padding: 0px 100px;
+}
+
+.HeadphonesSeperator {
+    display: flex;
+    margin-top: 150px;
+}
+
+.Headphones img {
+    width: 540px;
+    height: 560px;
+}
+
+.MainDiv {
+    height: 346px;
+    margin-top:110px;
+    margin-left: 100px;
+}
+
+.MainDivOpposite {
+    height: 346px;
+    margin-top:110px;
+    margin-right: 100px;
+}
+
+.MainDiv h1 {
+    /* font-family: 'Manrope'; */
+    color: black;
+    /* font-weight:700; */
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1.42857px;
+    line-height: 44px;
+}
+
+.MainBodyDescription {
+    /* font-family: 'Manrope'; */
+    /* font-weight: 500; */
+    color: black;
+    font-size: 15px;
+    /* width: 349px; */
+    opacity: 0.5;
+    margin-top:20px;
+}
+
+.TopTitle {
+    color: #D87D4A;
+    opacity: 0.5;
+
+    /* font-family: 'Manrope'; */
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 10px;
+}
+
+.MainDiv button, .MainDivOpposite button {
+    border-radius: 0px;
+    background: #D87D4A;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-color: #D87D4A;
+    padding: 12px 30.5px;
+    /* margin-top:20px; */
+}
+
+.MainDiv button:hover, .MainDivOpposite button:hover {
+    background-color: #FBAF85;
+    border-color: #FBAF85;
+}
+
+.Price {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.28571px;
+}
+
+.QuantityPicker {
+    /* width: 120px; */
+    background-color: #F1F1F1;
+    display: inline-block;
+    height: 46px;
+    margin-right: 15px;
+}
+
+.QuantityPickerDecrement, .QuantityPickerAmount, .QuantityPickerIncrement {
+    font-size: 13px;
+    display: inline-block;
+    padding: 11.5px 20px;
+    /* text-align: center; */
+    /* width: 20px; */
+    height: 46px;
+}
+
+.QuantityPickerDecrement, .QuantityPickerIncrement {
+    opacity: 0.25;
+    cursor: pointer;
+}
+
+.QuantityPickerAmount {
+    font-weight: bold;
+}
+
+/* ---- */
+
+.OuterDivFeaturesBox {
+    display: flex;
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+
+.Features {
+    width: 635px;
+    display: inline-block;
+}
+
+.Features p {
+    font-size: 15px;
+    opacity: 0.5;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.InTheBox h2 {
+    text-align: center;
+}
+
+.InTheBox ul {
+    margin-left:120px;
+}
+
+.InTheBox li {
+    list-style: none;
+}
+
+.InTheBox li:nth-child(2) span:nth-child(1) {
+    margin-right: 27.5px;
+}
+
+.InTheBox li p {
+    font-size: 15px;
+    /* font-weight: 500; */
+    line-height: 10px;
+    opacity: 0.5;
+    display: inline-block;
+}
+
+.InTheBox li span {
+    margin-right: 30px;
+    font-size: 15px;
+    color: #DB7D4A;
+    font-weight: 500;
+}
+
+.Features h2, .InTheBox h2, .YouMayAlsoLike h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1.14286px;
+    line-height: 36px;
+    margin-bottom: 32px;
+}
+
+/* ---- */
+
+.DivOuterImages {
+    margin-bottom: 160px;
+}
+
+.DivOuterImages img {
+    border-radius: 10px;
+}
+
+.Images {
+    display: inline-block;
+}
+
+.Images img:nth-child(2) {
+    display: block;
+    margin-top: 32px;
+}
+
+.BigImage {
+    float: right;
+}
+
+/* ---- */
+
+.YouMayAlsoLike h2 {
+    text-align: center;
+}

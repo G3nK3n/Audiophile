@@ -11,8 +11,8 @@ import Headers from "../Header/Headers";
 const Headphones_Lists = () => {
     return(
         <div className={classes.HeadphonesOuterDiv}>
+            <Headers />
             <Container className={classes.Headphones_ListsContainer}>
-                <Headers />
                 <Row>
                     <Col>
                         <div className={classes.Headphones_Title}>

@@ -12,8 +12,8 @@ import Img1 from '../../image-header.jpg';
 const MainBody = () => {
     return(
         <div className={classes.MainBody}>
-            <Container className={classes.HomeContainer}>
-                <Headers />
+            <Headers />
+            <Container className={classes.HomeContainer}> 
                 <Row>
                     <Col>
                         <div className={classes.MainDiv}>
