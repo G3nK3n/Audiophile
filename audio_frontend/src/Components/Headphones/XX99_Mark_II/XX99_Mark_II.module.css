@@ -69,7 +69,7 @@
     letter-spacing: 10px;
 }
 
-.MainDiv button, .MainDivOpposite button {
+.MainDiv button, .MainDivOpposite button, .YouMayAlsoLike button {
     border-radius: 0px;
     background: #D87D4A;
     font-size: 13px;
@@ -204,4 +204,136 @@
 
 .YouMayAlsoLike h2 {
     text-align: center;
+}
+
+.YouMayAlsoLike h3 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 1.71429px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.YouMayAlsoLike img {
+    width: 315px;
+    height: 318px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* margin-right: 87px; */
+}
+
+.YouMayAlsoLike div {
+    display: inline-block;
+    margin-right: 87px;
+}
+
+.YouMayAlsoLike div:nth-child(4) {
+    margin-right: 0px;
+}
+
+.YouMayAlsoLike form {
+    text-align: center;
+}
+
+/* ----- */
+
+.ItemsLists {
+    width: 350px;
+    height: 204px;
+    background-color: #F1F1F1;
+    text-align: center;
+    margin-top: 200px;
+    display: inline-block;
+    margin-right: 35px;
+    margin-bottom: 168px;
+}
+
+.ItemsLists:last-child {
+    margin-right: 0px;
+}
+
+.ItemsListsInner {
+    padding-top: 120px;
+}
+
+.ItemsLists h3{
+    text-transform: uppercase;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+}
+
+.ItemsLists a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    opacity: 0.5;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.ItemsListsEarphones, .ItemsListsHeadphones, .ItemsListsSpeakers {
+    position: absolute;
+}
+
+.ItemsListsHeadphones {
+    width: 212.95px;
+    height: 210px;
+    bottom: -2395px;
+    left: 226px;
+}
+
+.ItemsListsSpeakers {
+    width: 212.95px;
+    height: 210px;
+    bottom: -2395px;
+    left: 614px;
+}
+
+.ItemsListsEarphones {
+    width: 203.95px;
+    height: 180px;
+    bottom: -2390px;
+    right: 235px;
+}
+
+.ArrowIcon {
+    margin-left: 10px;
+}
+
+/* ---- */
+
+.BottomSectionContainer {
+    padding: 0px 100px;
+    margin-bottom: 200px;
+}
+
+.BottomSectionDescription {
+    width: 431px;
+    margin-top: 150px;
+}
+
+.BottomSectionDescription h1 {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 44px;
+}
+
+.BottomSectionDescription p {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.5;
+}
+
+.BottomSectionDescription span {
+    color: #D87D4A;
+}
+
+.ImageBestGear img {
+    border-radius: 10px;
+}
+
+.ImageBestGear {
+    margin-bottom: 160px;
 }

@@ -30,7 +30,6 @@ const BottomSection = () => {
                     </Col>
                 </Row>
             </Container>
-            
         </div>
     )
 }

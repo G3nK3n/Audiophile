@@ -12,6 +12,13 @@ import HeadphonesMKI_Img from '../../../image-category-page-mark_I.jpg';
 import HeadphonesXX59_Img from '../../../image-category-page-xx59.jpg';
 import SpeakerZX9_Img from '../../../image-category-page-ZX9.jpg';
 
+import RightArrowIcon from '../../../icon-arrow-right.svg';
+import HeadphonesThumbnail from '../../../image-category-thumbnail-headphones.png';
+import SpeakersThumbnail from '../../../image-category-thumbnail-speakers.png';
+import EarphonesThumbnail from '../../../image-category-thumbnail-earphones.png';
+
+import BestGear from '../../../image-best-gear.jpg';
+
 import { Link } from 'react-router-dom';
 
 
@@ -59,7 +66,7 @@ const X99_Mark_II = () => {
                                     <div className={classes.QuantityPickerAmount}>{counter}</div>
                                     <div onClick={() => setCounter(counter + 1)} className={classes.QuantityPickerIncrement}>+</div>
                                 </div>
-                                <Button>See Product</Button>
+                                <Button>Add to Cart</Button>
                             </div>
                         </div>
                     </Col>
@@ -109,8 +116,72 @@ const X99_Mark_II = () => {
                 <Row>
                     <div className={classes.YouMayAlsoLike}>
                         <h2>You may also like</h2>
-
+                        <div>
+                            <img src={HeadphonesMKI_Img} />
+                            <h3>XX99 Mark I</h3>
+                            <form>
+                                <Button>See Product</Button>
+                            </form>
+                        </div>
+                        <div>
+                            <img src={HeadphonesXX59_Img} />
+                            <h3>XX59</h3>
+                            <form>
+                                <Button>See Product</Button>
+                            </form>
+                        </div>
+                        <div>
+                            <img src={SpeakerZX9_Img} />
+                            <h3>ZX9 Speaker</h3>
+                            <form>
+                                <Button>See Product</Button>
+                            </form>
+                        </div>
                     </div>
+                </Row>
+                <Row>
+                    <div>
+                        <div className={classes.ItemsLists}>
+                            <img className={classes.ItemsListsHeadphones} src={HeadphonesThumbnail} />
+                            <div className={classes.ItemsListsInner}>
+                                <h3>Headphones</h3>
+                                <a href="#">Shop<img className={classes.ArrowIcon} src={RightArrowIcon} /></a>
+                            </div>
+                        </div>
+                        <div className={classes.ItemsLists}>
+                            <img className={classes.ItemsListsSpeakers} src={SpeakersThumbnail} />
+                            <div className={classes.ItemsListsInner}>
+                                <h3>Speakers</h3>
+                                <a href="#">Shop<img className={classes.ArrowIcon} src={RightArrowIcon} /></a>
+                            </div>
+                        </div>
+                        <div className={classes.ItemsLists}>
+                            <img className={classes.ItemsListsEarphones} src={EarphonesThumbnail} />
+                            <div className={classes.ItemsListsInner}>
+                                <h3>Earphones</h3>
+                                <a href="#">Shop<img className={classes.ArrowIcon} src={RightArrowIcon} /></a>
+                            </div>
+                        </div>
+                    </div>
+                </Row>
+                <Row>
+                    <Col>
+                        <div className={classes.BottomSectionDiv}>
+                            <div className={classes.BottomSectionDescription}>
+                                <h1>Bringing you the <span>best</span> audio gear</h1>
+                                <p>
+                                    Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories.
+                                    We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products.
+                                    Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.
+                                </p>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col>
+                        <div className={classes.ImageBestGear}>
+                            <img src={BestGear} />
+                        </div>
+                    </Col>
                 </Row>
             </Container>
         </div>
