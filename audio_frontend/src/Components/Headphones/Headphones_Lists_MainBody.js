@@ -24,6 +24,11 @@ const Headphones_Lists_MainBody = () => {
         navigate(path);
     }
 
+    const xx99MarkIRoute = () => {
+        let path = "/headphones/xx99MarkI";
+        navigate(path);
+    }
+
     return(
         <div>
             <Container className={classes.Headphones_MainBody_Container}>
@@ -56,7 +61,7 @@ const Headphones_Lists_MainBody = () => {
                                     As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for
                                     audiophiles, mixing engineers, and music aficionados alike in studios and on the go.
                                 </p>
-                                <Button>See Product</Button>
+                                <Button onClick={xx99MarkIRoute}>See Product</Button>
                             </div>
                         </Col>
                         <Col>
