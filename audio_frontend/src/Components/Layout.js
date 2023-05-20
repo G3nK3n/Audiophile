@@ -7,6 +7,8 @@ import Earphones_Lists from "./Earphones/Earphones_Lists";
 import Headphones_Lists from "./Headphones/Headphones_Lists";
 import X99_Mark_II from "./Headphones/XX99_Mark_II/XX99_Mark_II";
 import X99_Mark_I from "./Headphones/XX99_Mark_I/XX99_Mark_I";
+import XX59 from "./Headphones/XX59/XX59";
+import YX1 from "./Earphones/YX1/YX1";
 
 
 import {Routes, Route} from 'react-router-dom';
@@ -22,6 +24,8 @@ const Layout = () => {
                 <Route exact path="/earphones" element={<Earphones_Lists />} />
                 <Route exact path="/headphones/xx99MarkII" element={<X99_Mark_II />}/>
                 <Route exact path="/headphones/xx99MarkI" element={<X99_Mark_I />}/>
+                <Route exact path="/headphones/xx59" element={<XX59 />}/>
+                <Route exact path="/earphones/YX1" element={<YX1 />}/>
             </Routes>
             <Footer />
         </div>

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import Headers from "../../Header/Headers";
-import classes from './XX99_Mark_I.module.css';
+import classes from './YX1.module.css';
 import { Row, Col, Button, Container} from "react-bootstrap";
 
 import HeadphonesMKI_Img_Main from '../../../image-category-page-mark_I.jpg'
-import Img1 from '../../../image-gallery-Mark-I-1.jpg'
-import Img2 from '../../../image-gallery-Mark-I-2.jpg'
-import Img3 from '../../../image-gallery-Mark-I-3.jpg'
+import Img1 from '../../../image-gallery-YX1-1.jpg'
+import Img2 from '../../../image-gallery-YX1-2.jpg'
+import Img3 from '../../../image-gallery-YX1-3.jpg'
 
 import HeadphonesMKII_Img from '../../../image-category-page-preview_mark_II.jpg';
 import HeadphonesXX59_Img from '../../../image-category-page-xx59.jpg';
@@ -15,14 +15,16 @@ import SpeakerZX9_Img from '../../../image-category-page-ZX9.jpg';
 import RightArrowIcon from '../../../icon-arrow-right.svg';
 import HeadphonesThumbnail from '../../../image-category-thumbnail-headphones.png';
 import SpeakersThumbnail from '../../../image-category-thumbnail-speakers.png';
-import EarphonesThumbnail from '../../../image-category-thumbnail-earphones.png';
+
+import EarphonesThumbnail from '../../../image-product-YX1.jpg';
+
 
 import BestGear from '../../../image-best-gear.jpg';
 
 import { Link, useNavigate } from 'react-router-dom';
 
 
-const X99_Mark_I = () => {
+const YX1 = () => {
 
     const [counter, setCounter] = useState(1);
 
@@ -64,17 +66,18 @@ const X99_Mark_I = () => {
                 <Row>
                     <Col>
                         <div className={classes.Headphones}>
-                            <img alt="MKII" src={HeadphonesMKI_Img_Main} />
+                            <img alt="YX1" src={EarphonesThumbnail} />
                         </div>
                     </Col>
                     <Col>
                         <div className={classes.MainDiv}>
-                            <h1>XX99 MARK I <br/> HEADPHONES</h1>
+                            <p className={classes.TopTitle}>New Product</p>
+                            <h1>YX1 WIRELESS <br/> EARPHONES</h1>
                             <p className={classes.MainBodyDescription}>
-                                As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles,
-                                mixing engineers, and music aficionados alike in studios and on the go. 
+                                Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones.
+                                Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature. 
                             </p>
-                            <p className={classes.Price}>$ 1,750</p>
+                            <p className={classes.Price}>$ 599</p>
                             <div>
                                 <div className={classes.QuantityPicker}>
                                     <div onClick={decrementValue} className={classes.QuantityPickerDecrement}>-</div>
@@ -92,12 +95,14 @@ const X99_Mark_I = () => {
                             <div className={classes.Features}>
                                 <h2>Features</h2>
                                 <p>
-                                    As the headphones all others are measured against, the XX99 Mark I demonstrates over five decades of audio expertise, redefining the critical listening experience.
-                                    This pair of closed-back headphones are made of industrial, aerospace-grade materials to emphasize durability at a relatively light weight of 11 oz.
+                                    Experience unrivalled stereo sound thanks to innovative acoustic technology. With improved ergonomics designed for full day wearing,
+                                    these revolutionary earphones have been finely crafted to provide you with the perfect fit,
+                                    delivering complete comfort all day long while enjoying exceptional noise isolation and truly immersive sound.
                                 </p>
                                 <p>
-                                    From the handcrafted microfiber ear cushions to the robust metal headband with inner damping element, the components work together to deliver comfort and uncompromising sound. Its closed-back design delivers up to 27 dB of passive noise cancellation,
-                                    reducing resonance by reflecting sound to a dedicated absorber. For connectivity, a specially tuned cable is included with a balanced gold connector.
+                                    The YX1 Wireless Earphones features customizable controls for volume, music, calls, and voice assistants built into both earbuds.
+                                    The new 7-hour battery life can be extended up to 28 hours with the charging case, giving you uninterrupted play time.
+                                    Exquisite craftsmanship with a splash resistant design now available in an all new white and grey color scheme as well as the popular classic black.
                                 </p>
                             </div>
                         </Col>
@@ -106,10 +111,11 @@ const X99_Mark_I = () => {
                                 <div>
                                     <h2>In the box</h2>
                                     <ul>
-                                        <li><span>1x</span><p>Headphone Unit</p></li>
-                                        <li><span>2x</span><p>Replacement Earcups</p></li>
+                                        <li><span>2x</span><p>Earphone Unit</p></li>
+                                        <li><span>6x</span><p>Multi-size Earplugs</p></li>
                                         <li><span>1x</span><p>User Manual</p></li>
-                                        <li><span>1x</span><p>3.5mm 5m Audio Cable</p></li>
+                                        <li><span>1x</span><p>USB-C Charging Cable</p></li>
+                                        <li><span>1x</span><p>Travel Pouch</p></li>
                                     </ul>
                                 </div>
                             </div>
@@ -129,10 +135,10 @@ const X99_Mark_I = () => {
                     <div className={classes.YouMayAlsoLike}>
                         <h2>You may also like</h2>
                         <div>
-                            <img src={HeadphonesMKII_Img} />
-                            <h3>XX99 Mark II</h3>
+                            <img src={HeadphonesMKI_Img_Main} />
+                            <h3>XX99 Mark I</h3>
                             <form>
-                                <Button onClick={xx99MarkIIRoute}>See Product</Button>
+                                <Button onClick={xx99MarkIRoute}>See Product</Button>
                             </form>
                         </div>
                         <div>
@@ -200,4 +206,4 @@ const X99_Mark_I = () => {
     )
 }
 
-export default X99_Mark_I;
+export default YX1;

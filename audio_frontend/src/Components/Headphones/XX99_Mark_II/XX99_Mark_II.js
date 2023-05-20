@@ -19,7 +19,7 @@ import EarphonesThumbnail from '../../../image-category-thumbnail-earphones.png'
 
 import BestGear from '../../../image-best-gear.jpg';
 
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const X99_Mark_II = () => {
@@ -30,6 +30,22 @@ const X99_Mark_II = () => {
         if(counter > 1) {
             setCounter(counter - 1)
         }
+    }
+
+    let navigate = useNavigate();
+    const xx99MarkIIRoute = () => {
+        let path = "/headphones/xx99MarkII";
+        navigate(path);
+    }
+
+    const xx99MarkIRoute = () => {
+        let path = "/headphones/xx99MarkI";
+        navigate(path);
+    }
+
+    const xx59Route = () => {
+        let path = "/headphones/xx59";
+        navigate(path);
     }
 
     return(
@@ -120,14 +136,14 @@ const X99_Mark_II = () => {
                             <img src={HeadphonesMKI_Img} />
                             <h3>XX99 Mark I</h3>
                             <form>
-                                <Button>See Product</Button>
+                                <Button onClick={xx99MarkIRoute}>See Product</Button>
                             </form>
                         </div>
                         <div>
                             <img src={HeadphonesXX59_Img} />
                             <h3>XX59</h3>
                             <form>
-                                <Button>See Product</Button>
+                                <Button onClick={xx59Route}>See Product</Button>
                             </form>
                         </div>
                         <div>
@@ -145,21 +161,21 @@ const X99_Mark_II = () => {
                             <img className={classes.ItemsListsHeadphones} src={HeadphonesThumbnail} />
                             <div className={classes.ItemsListsInner}>
                                 <h3>Headphones</h3>
-                                <a href="#">Shop<img className={classes.ArrowIcon} src={RightArrowIcon} /></a>
+                                <Link to={"/headphones"}>Shop<img className={classes.ArrowIcon} src={RightArrowIcon} /></Link>
                             </div>
                         </div>
                         <div className={classes.ItemsLists}>
                             <img className={classes.ItemsListsSpeakers} src={SpeakersThumbnail} />
                             <div className={classes.ItemsListsInner}>
                                 <h3>Speakers</h3>
-                                <a href="#">Shop<img className={classes.ArrowIcon} src={RightArrowIcon} /></a>
+                                <Link to={"/speakers"}>Shop<img className={classes.ArrowIcon} src={RightArrowIcon} /></Link>
                             </div>
                         </div>
                         <div className={classes.ItemsLists}>
                             <img className={classes.ItemsListsEarphones} src={EarphonesThumbnail} />
                             <div className={classes.ItemsListsInner}>
                                 <h3>Earphones</h3>
-                                <a href="#">Shop<img className={classes.ArrowIcon} src={RightArrowIcon} /></a>
+                                <Link to={"/earphones"}>Shop<img className={classes.ArrowIcon} src={RightArrowIcon} /></Link>
                             </div>
                         </div>
                     </div>

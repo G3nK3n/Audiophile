@@ -29,6 +29,11 @@ const Headphones_Lists_MainBody = () => {
         navigate(path);
     }
 
+    const xx59Route = () => {
+        let path = "/headphones/xx59";
+        navigate(path);
+    }
+
     return(
         <div>
             <Container className={classes.Headphones_MainBody_Container}>
@@ -85,7 +90,7 @@ const Headphones_Lists_MainBody = () => {
                                     Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones.
                                     The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.
                                 </p>
-                                <Button>See Product</Button>
+                                <Button onClick={xx59Route}>See Product</Button>
                             </div>
                         </Col>
                     </div>

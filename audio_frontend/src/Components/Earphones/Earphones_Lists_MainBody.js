@@ -11,8 +11,16 @@ import SpeakersThumbnail from '../../image-category-thumbnail-speakers.png';
 import EarphonesThumbnail from '../../image-category-thumbnail-earphones.png';
 import RightArrowIcon from '../../icon-arrow-right.svg';
 
+import { Link, useNavigate } from 'react-router-dom';
 
 const Earphones_Lists_MainBody = () => {
+    
+    let navigate = useNavigate();
+    const YX1Route = () => {
+        let path = "/earphones/YX1";
+        navigate(path);
+    }
+    
     return(
         <div>
             <Container className={classes.Earphones_MainBody_Container}>
@@ -31,7 +39,7 @@ const Earphones_Lists_MainBody = () => {
                                     Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones.
                                     Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.
                                 </p>
-                                <Button>See Product</Button>
+                                <Button onClick={YX1Route}>See Product</Button>
                             </div>
                         </Col>
                     </div>
