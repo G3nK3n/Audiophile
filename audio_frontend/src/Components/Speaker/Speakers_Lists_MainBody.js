@@ -13,7 +13,22 @@ import SpeakersThumbnail from '../../image-category-thumbnail-speakers.png';
 import EarphonesThumbnail from '../../image-category-thumbnail-earphones.png';
 import RightArrowIcon from '../../icon-arrow-right.svg';
 
+import { useNavigate } from 'react-router-dom';
+
 const Speakers_Lists_MainBody = () => {
+
+    let navigate = useNavigate();
+    const ZX9Route = () => {
+        let path = "/speaker/ZX9";
+        navigate(path);
+    }
+
+    const ZX7Route = () => {
+        let path = "/speaker/ZX7";
+        navigate(path);
+    }
+
+
     return(
         <div>
             <Container className={classes.Speakers_MainBody_Container}>
@@ -32,7 +47,7 @@ const Speakers_Lists_MainBody = () => {
                                     Upgrade your sound system with the all new ZX9 active speaker.
                                     It's a bookshelf speaker system that offers truly wireless connectivity - creating new possibilities for more pleasing and practical audio setups.
                                 </p>
-                                <Button>See Product</Button>
+                                <Button onClick={ZX9Route}>See Product</Button>
                             </div>
                         </Col>
                     </div>
@@ -46,7 +61,7 @@ const Speakers_Lists_MainBody = () => {
                                     Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile that 
                                     represents the top of the line powered speakers for home or studio use.
                                 </p>
-                                <Button>See Product</Button>
+                                <Button onClick={ZX7Route}>See Product</Button>
                             </div>
                         </Col>
                         <Col>
