@@ -8,7 +8,6 @@ import { Row, Col} from "react-bootstrap";
 const Earphones_Lists_Title = () => {
     return(
         <div className={classes.EarphonesOuterDiv}>
-            <Headers />
             <Container className={classes.Earphones_ListsContainer}>
                 <Row>
                     <Col>

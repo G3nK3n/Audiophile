@@ -52,9 +52,6 @@ const ZX9 = () => {
 
     return(
         <div>
-            <div className={classes.Headers}>
-                <Headers />
-            </div>
             <Container className={classes.Headphones_MainBody_Container}>
                 <Row>
                     <Col>

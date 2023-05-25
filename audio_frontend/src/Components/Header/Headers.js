@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from './Headers.module.css';
 
 import { Row, Col, Container } from "react-bootstrap";
@@ -8,7 +8,8 @@ import Cart from '../../icon-cart.svg';
 
 import { Link } from 'react-router-dom';
 
-const Headers = () => {
+const Headers = (props) => {
+
     return(
         <div className={classes.OuterHeader}>
             <Container className={classes.HeaderContainer}>
@@ -26,8 +27,8 @@ const Headers = () => {
                                     <li><Link to={"/earphones"}>Earphones</Link></li>
                                 </ul>
                             </div>
-                            <div className={classes.Cart}>
-                                <a href="#"><img src={Cart} /></a>
+                            <div className={classes.Cart} onClick={props.cart}>
+                                <img src={Cart} />
                             </div>
                         </div>
                     </Col>

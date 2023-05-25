@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 
+import Headers from "./Header/Headers";
 import HomePage from './Home/Home';
 import Footer from './Footer/Footer';
 import Speakers_Lists from "./Speaker/Speakers_Lists";
@@ -12,13 +13,26 @@ import YX1 from "./Earphones/YX1/YX1";
 import ZX9 from "./Speaker/ZX9/ZX9";
 import ZX7 from "./Speaker/ZX7/ZX7";
 
+import Backdrop from './Backdrop/Backdrop';
 
 import {Routes, Route} from 'react-router-dom';
 
 
 const Layout = () => {
+
+
+    const [openCart, setOpenCart] = useState(false);
+
+    const openTheCart = () => {
+        setOpenCart(!openCart);
+    } 
+
+
     return(
         <div>
+            {openCart ? <Backdrop /> : null}
+            
+            <Headers cart={openTheCart}/>
             <Routes>
                 <Route exact path="/" element={<HomePage />} />
                 <Route exact path="/headphones" element={<Headphones_Lists />} />
@@ -32,6 +46,7 @@ const Layout = () => {
                 <Route exact path="/speaker/ZX7" element={<ZX7 />}/>
             </Routes>
             <Footer />
+            
         </div>
     )
 }

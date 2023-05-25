@@ -8,7 +8,6 @@ import { Row, Col, Button} from "react-bootstrap";
 const Speakers_Lists_Title = () => {
     return(
         <div className={classes.SpeakersOuterDiv}>
-            <Headers />
             <Container className={classes.Speakers_ListsContainer}>
                 <Row>
                     <Col>
