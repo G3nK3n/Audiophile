@@ -13,7 +13,9 @@ import YX1 from "./Earphones/YX1/YX1";
 import ZX9 from "./Speaker/ZX9/ZX9";
 import ZX7 from "./Speaker/ZX7/ZX7";
 
-import Backdrop from './Backdrop/Backdrop';
+import Checkout from "./Modal/Checkout/Checkout";
+
+import Modal from './Modal/Modal';
 
 import {Routes, Route} from 'react-router-dom';
 
@@ -25,16 +27,23 @@ const Layout = () => {
 
     const openTheCart = () => {
         setOpenCart(!openCart);
-    } 
+        console.log("Clicked!");
+    }
+
+    const closeTheCart = () => {
+        if(openCart) {
+            setOpenCart(false);
+        }
+    }
 
 
     return(
         <div>
-            {openCart ? <Backdrop /> : null}
-            
-            <Headers cart={openTheCart}/>
+            {openCart ? <Modal closeCart={openTheCart}/> : null}
+            <Headers closeCart={closeTheCart} cart={openTheCart}/>
             <Routes>
                 <Route exact path="/" element={<HomePage />} />
+                <Route exact path="/checkout" element={<Checkout />} />
                 <Route exact path="/headphones" element={<Headphones_Lists />} />
                 <Route exact path="/speakers" element={<Speakers_Lists />} />
                 <Route exact path="/earphones" element={<Earphones_Lists />} />

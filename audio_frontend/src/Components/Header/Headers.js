@@ -21,10 +21,11 @@ const Headers = (props) => {
                             </div>
                             <div className={classes.Links}>
                                 <ul>
-                                    <li><Link to={"/"}>Home</Link></li>
-                                    <li><Link to={"/headphones"}>Headphones</Link></li>
-                                    <li><Link to={"/speakers"}>Speakers</Link></li>
-                                    <li><Link to={"/earphones"}>Earphones</Link></li>
+                                    {/* The onClick combined with the Link router will close the cart if its open when redirecting to another page */}
+                                    <li><Link onClick={props.closeCart} to={"/"}>Home</Link></li>
+                                    <li><Link onClick={props.closeCart} to={"/headphones"}>Headphones</Link></li>
+                                    <li><Link onClick={props.closeCart} to={"/speakers"}>Speakers</Link></li>
+                                    <li><Link onClick={props.closeCart} to={"/earphones"}>Earphones</Link></li>
                                 </ul>
                             </div>
                             <div className={classes.Cart} onClick={props.cart}>
