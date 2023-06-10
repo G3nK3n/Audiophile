@@ -16,18 +16,21 @@ const Modal = (props) => {
             id: 1, 
             name: "XX99_MK_II", 
             price: 2999,
+            quantity: 1,
             image: Img1
         },
         {
             id: 2, 
             name: "XX59", 
             price: 899,
+            quantity: 2,
             image: Img2
         },
         {
             id: 3, 
             name: "YX1", 
             price: 2999,
+            quantity: 3,
             image: Img3
         }
 
@@ -35,11 +38,16 @@ const Modal = (props) => {
 
     //Initialized the DUMMY_CART for now...
     const [cartList, setCartList] = useState(DUMMY_CART);
+    const [preTotal, setPretotal] = useState(0);
 
     const calculateTotal = () => {
         let totalAmount=0;
 
-        totalAmount = cartList.reduce((previousValue, nextValue) => previousValue + nextValue.price, 0);
+        totalAmount = cartList.reduce((previousValue, nextValue) => previousValue + (nextValue.price * nextValue.quantity), 0);
+
+        // setPretotal(totalAmount);
+        
+        console.log(totalAmount);
 
         return totalAmount;
     }
@@ -48,6 +56,7 @@ const Modal = (props) => {
         const newList = cartList.filter((item) => item === 0);
         setCartList(newList);
     }
+
 
     return(
         <div>
@@ -60,12 +69,14 @@ const Modal = (props) => {
                     <div className={classes.CartAmount}>
                         {cartList.map((cartContents) => {
                             return(
-                                <CartContents key={cartContents.id} theImage={cartContents.image} itemName={cartContents.name} price={cartContents.price}/>
+                                <CartContents key={cartContents.id} theQuantity={cartContents.quantity} theImage={cartContents.image} itemName={cartContents.name} price={cartContents.price}/>
+                                
                             )
                         })}
                     </div>
                     <div>
                         <p className={classes.theTotalTitle}>TOTAL</p>
+                        {/* <p className={classes.theTotalAmount}>$ {preTotal}</p> */}
                         <p className={classes.theTotalAmount}>$ {calculateTotal()}</p>
                         {/* Figure out how to remove cart when going to another page */}
                         <Link onClick={props.closeCart} to={"/checkout"}><p className={classes.CheckoutButton}>CHECKOUT</p></Link>

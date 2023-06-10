@@ -1,23 +1,17 @@
-import React, {useEffect, useState} from "react";
-import classes from './CartContents.module.css';
+import React, {useState} from "react";
+import classes from './SummaryContents.module.css';
 
 
-const CartContents = (props) => {
+const SummaryContents = props => {
 
-    const [counter, setCounter] = useState(props.theQuantity);
+    const [counter, setCounter] = useState(1);
 
     const decrementValue = () => {
         if(counter > 1) {
             setCounter(counter - 1)
         }
-
     }
 
-    // useEffect(() => {
-    //     props.updateCart(counter, props.key);
-    // }, [counter])
-
-    // CALCULATE TOTAL ONLY WHEN ADDING BACKEND
     return(
         <div className={classes.CartContents}>
             <img src={props.theImage} />
@@ -27,8 +21,8 @@ const CartContents = (props) => {
             </div>
             <div className={classes.CartQuantityContents}>
                 <div className={classes.QuantityPicker}>
-                    <div onClick={() => (counter > 1) ? setCounter(counter - 1) : counter} className={classes.QuantityPickerDecrement}>-</div>
-                    <div onChange={(e) => setCounter(e.target.value)} className={classes.QuantityPickerAmount}>{counter}</div>
+                    <div onClick={decrementValue} className={classes.QuantityPickerDecrement}>-</div>
+                    <div className={classes.QuantityPickerAmount}>{counter}</div>
                     <div onClick={() => setCounter(counter + 1)} className={classes.QuantityPickerIncrement}>+</div>
                 </div>
             </div>
@@ -36,4 +30,4 @@ const CartContents = (props) => {
     )
 }
 
-export default CartContents;
+export default SummaryContents;

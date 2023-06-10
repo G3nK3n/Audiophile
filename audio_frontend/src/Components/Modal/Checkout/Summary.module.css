@@ -1,0 +1,82 @@
+.Backdrop {
+    background: rgba(0,0,0,0.75);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+
+.SummarySection {
+    width: 350px;
+    height: 488px;
+    display: inline-block;
+    background: white;
+    position: absolute;
+    left: 927px;
+    top: 232px;
+    border-radius: 8px;
+}
+
+.SummarySection a {
+    text-decoration: none;
+}
+
+/* --- */
+
+.SummaryAmount {
+    overflow-y: scroll;
+    height: 240px;
+}
+
+.SummaryTitle {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1.28571px;
+    font-weight: 700;
+}
+
+.RemoveAllButton {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.5;
+}
+
+.SummaryTitle, .theTotalTitle {
+    display: inline-block;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.RemoveAllButton, .theTotalAmount {
+    float: right;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.theTotalTitle {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.theTotalAmount {
+    font-size: 18px;
+    line-height:25px;
+    font-weight: 700;
+}
+
+.CheckoutButton {
+    margin: 0px 30px;
+    padding: 15px 0px;
+    text-align: center;
+    background-color: #D87D4A;
+    color: white;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}

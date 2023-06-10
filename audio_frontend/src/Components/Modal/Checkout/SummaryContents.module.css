@@ -1,0 +1,64 @@
+.CartContents img {
+    width: 64px;
+    height: 64px;
+    vertical-align: bottom;
+}
+
+.CartContents:first-child {
+    margin-top: 0px;
+}
+
+.CartContents {
+    padding: 0px 30px;
+    margin-top: 25px;
+}
+
+
+.itemDetail {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.itemName {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 700;
+}
+
+.itemPrice {
+    font-size: 14px;
+    opacity: 0.5;
+    font-weight: 700;
+    line-height: 0px;
+}
+
+.CartQuantityContents {
+    /* display: inline-block; */
+    float:right;
+    margin-top: 20px;
+}
+
+.QuantityPicker {
+    /* width: 120px; */
+    background-color: #F1F1F1;
+    display: inline-block;
+    height: 30px;
+}
+
+.QuantityPickerDecrement, .QuantityPickerAmount, .QuantityPickerIncrement {
+    font-size: 13px;
+    display: inline-block;
+    padding: 4.5px 13px;
+    /* text-align: center; */
+    /* width: 20px; */
+    height: 46px;
+}
+
+.QuantityPickerDecrement, .QuantityPickerIncrement {
+    opacity: 0.25;
+    cursor: pointer;
+}
+
+.QuantityPickerAmount {
+    font-weight: bold;
+}
