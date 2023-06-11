@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import classes from './Modal.module.css';
 import CartContents from './CartContents';
 
@@ -23,14 +23,14 @@ const Modal = (props) => {
             id: 2, 
             name: "XX59", 
             price: 899,
-            quantity: 2,
+            quantity: 1,
             image: Img2
         },
         {
             id: 3, 
             name: "YX1", 
             price: 2999,
-            quantity: 3,
+            quantity: 1,
             image: Img3
         }
 
@@ -38,18 +38,15 @@ const Modal = (props) => {
 
     //Initialized the DUMMY_CART for now...
     const [cartList, setCartList] = useState(DUMMY_CART);
-    const [preTotal, setPretotal] = useState(0);
 
     const calculateTotal = () => {
-        let totalAmount=0;
+        let newTotalAmount=0;
 
-        totalAmount = cartList.reduce((previousValue, nextValue) => previousValue + (nextValue.price * nextValue.quantity), 0);
-
-        // setPretotal(totalAmount);
+        newTotalAmount = cartList.reduce((previousValue, nextValue) => previousValue + (nextValue.price * nextValue.quantity), 0);
         
-        console.log(totalAmount);
+        console.log(newTotalAmount);
 
-        return totalAmount;
+        return newTotalAmount
     }
 
     const removeAllItems = () => {
@@ -57,6 +54,14 @@ const Modal = (props) => {
         setCartList(newList);
     }
 
+    const testTotal = (newCartQuantity, id) => {
+        const currentIndex = DUMMY_CART.findIndex((content) => content.id === id);
+        
+        const updatedCart = DUMMY_CART.slice();
+        updatedCart[currentIndex].quantity = newCartQuantity;
+        setCartList(updatedCart);
+
+    }
 
     return(
         <div>
@@ -69,8 +74,7 @@ const Modal = (props) => {
                     <div className={classes.CartAmount}>
                         {cartList.map((cartContents) => {
                             return(
-                                <CartContents key={cartContents.id} theQuantity={cartContents.quantity} theImage={cartContents.image} itemName={cartContents.name} price={cartContents.price}/>
-                                
+                                <CartContents calculateTotal={testTotal} id={cartContents.id} key={cartContents.id} theQuantity={cartContents.quantity} theImage={cartContents.image} itemName={cartContents.name} price={cartContents.price}/>
                             )
                         })}
                     </div>
