@@ -14,7 +14,6 @@ const CartContents = (props) => {
             props.calculateTotal(val, id);
         }
 
-       
     }
 
     const IncrementValue = (theCounter, id) => {
@@ -27,6 +26,7 @@ const CartContents = (props) => {
         setCounter(val);
         console.log("Value after incrementing: " + counter);
         props.calculateTotal(val, id);
+
     }
 
 
