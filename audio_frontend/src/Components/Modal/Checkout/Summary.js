@@ -1,6 +1,8 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import classes from './Summary.module.css';
 import SummaryContents from "./SummaryContents";
+
+import {Row, Col} from 'react-bootstrap';
 
 import Img1 from '../../../CART-image-xx99-mark-two-headphones.jpg';
 import Img2 from '../../../CART-image-xx59-headphones.jpg';
@@ -38,6 +40,14 @@ const Summary = (props) => {
 
     //Initialized the DUMMY_CART for now...
     const [cartList, setCartList] = useState(DUMMY_CART);
+    const [grandTotal, setGrandTotal] = useState(0);
+
+    const shipping = 50;
+    const VAT = 1079;
+
+    useEffect(() => {
+        calculateGrandTotal();
+    }, [])
 
     const calculateTotal = () => {
         let totalAmount=0;
@@ -45,6 +55,12 @@ const Summary = (props) => {
         totalAmount = cartList.reduce((previousValue, nextValue) => previousValue + nextValue.price, 0);
 
         return totalAmount;
+    }
+
+    const calculateGrandTotal = () => {
+        let theTotalAmount = calculateTotal();
+        let theGrandTotal = theTotalAmount + shipping + VAT;
+        setGrandTotal(theGrandTotal);
     }
 
     // const removeAllItems = () => {
@@ -62,16 +78,39 @@ const Summary = (props) => {
                     <div className={classes.SummaryAmount}>
                         {cartList.map((cartContents) => {
                             return(
-                                <SummaryContents key={cartContents.id} theImage={cartContents.image} itemName={cartContents.name} price={cartContents.price}/>
-                                
+                                <SummaryContents key={cartContents.id} getQuantity={cartContents.quantity} theImage={cartContents.image} itemName={cartContents.name} price={cartContents.price}/>
                             )
                         })}
                     </div>
-                    <div>
+                    <Row>
+                        <Col>
+                            <div>
+                                <p className={classes.theTotalTitle}>TOTAL</p>
+                                <p className={classes.theShippingTitle}>SHIPPING</p>
+                                <p className={classes.theVATTitle}>VAT (INCLUDED)</p>
+                                <p className={classes.theGrandTotalTitle}>GRAND TOTAL</p>
+                            </div>
+                        </Col>
+                        <Col>
+                            <div>
+                                <p className={classes.theTotalAmount}>$ {calculateTotal()}</p>
+                                <p className={classes.theShippingAmount}>$ {shipping}</p>
+                                <p className={classes.theVATAmount}>$ {VAT}</p>
+                                <p className={classes.theGrandTotalAmount}>$ {grandTotal}</p>
+                            </div>
+                        </Col>
+                    </Row>
+                    <Link onClick={props.closeCart} to={"#"}><p className={classes.PayButton}>CONTINUE AND PAY</p></Link>
+                    
+                    {/* <div>
                         <p className={classes.theTotalTitle}>TOTAL</p>
                         <p className={classes.theTotalAmount}>$ {calculateTotal()}</p>
-                        <Link to={"#"}><p className={classes.CheckoutButton}>CONTINUE & PAY</p></Link>
                     </div>
+                    <div>
+                        <p className={classes.theTotalTitle}>TOTAL</p>
+                        <p className={classes.theTotalAmount}>$ {calculateTotal()}</p>  
+                    </div>
+                    <Link to={"#"}><p className={classes.CheckoutButton}>CONTINUE & PAY</p></Link> */}
                 </div>
             </div>
         </div>

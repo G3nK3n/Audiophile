@@ -19,13 +19,7 @@ const SummaryContents = props => {
                 <p className={classes.itemName}>{props.itemName}</p>
                 <p className={classes.itemPrice}>$ {props.price}</p>
             </div>
-            <div className={classes.CartQuantityContents}>
-                <div className={classes.QuantityPicker}>
-                    <div onClick={decrementValue} className={classes.QuantityPickerDecrement}>-</div>
-                    <div className={classes.QuantityPickerAmount}>{counter}</div>
-                    <div onClick={() => setCounter(counter + 1)} className={classes.QuantityPickerIncrement}>+</div>
-                </div>
-            </div>
+            <p className={classes.getQuantity}>x{props.getQuantity}</p>
         </div>
     )
 }

@@ -8,7 +8,7 @@
 
 .SummarySection {
     width: 350px;
-    height: 488px;
+    height: 590px;
     display: inline-block;
     background: white;
     position: absolute;
@@ -44,33 +44,49 @@
     opacity: 0.5;
 }
 
-.SummaryTitle, .theTotalTitle {
+.SummaryTitle, .theTotalTitle, .theShippingTitle, .theVATTitle, .theGrandTotalTitle {
     display: inline-block;
     padding-left: 30px;
     padding-top: 30px;
 }
 
-.RemoveAllButton, .theTotalAmount {
+.RemoveAllButton, .theTotalAmount, .theShippingAmount, .theVATAmount, .theGrandTotalAmount {
     float: right;
     padding-right: 30px;
     padding-top: 30px;
 }
 
-.theTotalTitle {
+.theTotalTitle, .theShippingTitle, .theVATTitle, .theGrandTotalTitle {
     font-size: 15px;
     line-height: 25px;
     font-weight: 500;
     opacity: 0.5;
+    margin-bottom: 5px;
 }
 
-.theTotalAmount {
+.theTotalAmount, .theShippingAmount, .theVATAmount, .theGrandTotalAmount {
     font-size: 18px;
     line-height:25px;
     font-weight: 700;
+    text-align: right;
+    float: none;
+    margin-bottom:5px;
 }
 
-.CheckoutButton {
-    margin: 0px 30px;
+.theShippingTitle, .theVATTitle {
+    padding-top: 0;
+}
+
+.theShippingAmount, .theVATAmount {
+    padding-top: 0;
+}
+
+.theGrandTotalAmount {
+    color:#D87D4A;
+}
+
+.PayButton {
+    margin: 20px 30px;
     padding: 15px 0px;
     text-align: center;
     background-color: #D87D4A;
