@@ -1,14 +1,30 @@
-import React from "react";
+import React, {useState} from "react";
 import classes from './Checkout.module.css';
 import Summary from './Summary';
+import ThankYou from '../Checkout/ThankYou/ThankYou';
 
 import { Container } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import Forms from 'react-bootstrap/Form';
 
 const Checkout = () => {
+
+    const [showThankYou, setShowThankYou] = useState(false);
+
+    const showThanks = () => {
+        setShowThankYou(!showThankYou);
+    }
+
+
     return(
         <div className={classes.CheckoutDiv}>
+            {
+                showThankYou ?
+                <div>
+                    <ThankYou />
+                </div> : null 
+            
+            }
             <Container className={classes.CheckoutContainer}>
                 <a href="#" className={classes.GoBack}>Go Back</a>
 
@@ -88,7 +104,7 @@ const Checkout = () => {
                     </Forms>
                 </div>
                 <div>
-                    <Summary />
+                    <Summary showThanks={showThanks} />
                 </div>
 
             </Container>

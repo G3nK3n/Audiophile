@@ -1,16 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import classes from './SummaryContents.module.css';
 
 
 const SummaryContents = props => {
-
-    const [counter, setCounter] = useState(1);
-
-    const decrementValue = () => {
-        if(counter > 1) {
-            setCounter(counter - 1)
-        }
-    }
 
     return(
         <div className={classes.CartContents}>

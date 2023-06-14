@@ -27,7 +27,6 @@ const Layout = () => {
 
     const openTheCart = () => {
         setOpenCart(!openCart);
-        console.log("Clicked!");
     }
 
     const closeTheCart = () => {

@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import classes from './Summary.module.css';
 import SummaryContents from "./SummaryContents";
 
+
 import {Row, Col} from 'react-bootstrap';
 
 import Img1 from '../../../CART-image-xx99-mark-two-headphones.jpg';
@@ -41,6 +42,7 @@ const Summary = (props) => {
     //Initialized the DUMMY_CART for now...
     const [cartList, setCartList] = useState(DUMMY_CART);
     const [grandTotal, setGrandTotal] = useState(0);
+    
 
     const shipping = 50;
     const VAT = 1079;
@@ -62,11 +64,6 @@ const Summary = (props) => {
         let theGrandTotal = theTotalAmount + shipping + VAT;
         setGrandTotal(theGrandTotal);
     }
-
-    // const removeAllItems = () => {
-    //     const newList = cartList.filter((item) => item === 0);
-    //     setCartList(newList);
-    // }
 
     return(
         <div>
@@ -100,17 +97,7 @@ const Summary = (props) => {
                             </div>
                         </Col>
                     </Row>
-                    <Link onClick={props.closeCart} to={"#"}><p className={classes.PayButton}>CONTINUE AND PAY</p></Link>
-                    
-                    {/* <div>
-                        <p className={classes.theTotalTitle}>TOTAL</p>
-                        <p className={classes.theTotalAmount}>$ {calculateTotal()}</p>
-                    </div>
-                    <div>
-                        <p className={classes.theTotalTitle}>TOTAL</p>
-                        <p className={classes.theTotalAmount}>$ {calculateTotal()}</p>  
-                    </div>
-                    <Link to={"#"}><p className={classes.CheckoutButton}>CONTINUE & PAY</p></Link> */}
+                    <Link><p onClick={props.showThanks} className={classes.PayButton}>CONTINUE AND PAY</p></Link>
                 </div>
             </div>
         </div>
