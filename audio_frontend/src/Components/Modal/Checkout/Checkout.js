@@ -7,21 +7,56 @@ import { Container } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import Forms from 'react-bootstrap/Form';
 
+import Img1 from '../../../CART-image-xx99-mark-two-headphones.jpg';
+import Img2 from '../../../CART-image-xx59-headphones.jpg';
+import Img3 from '../../../CART-image-yx1-earphones.jpg';
+
 const Checkout = () => {
 
+
+    let DUMMY_CART=[
+        {
+            id: 1, 
+            name: "XX99_MK_II", 
+            price: 2999,
+            quantity: 1,
+            image: Img1
+        },
+        {
+            id: 2, 
+            name: "XX59", 
+            price: 899,
+            quantity: 1,
+            image: Img2
+        },
+        {
+            id: 3, 
+            name: "YX1", 
+            price: 2999,
+            quantity: 1,
+            image: Img3
+        }
+
+    ]
+
     const [showThankYou, setShowThankYou] = useState(false);
+    const [cartList, setCartList] = useState(DUMMY_CART);
 
     const showThanks = () => {
         setShowThankYou(!showThankYou);
     }
 
+    //TEMP UNTIL WE HAVE DATABASE
+    const getCartList = () => {
+        return cartList;
+    }
 
     return(
         <div className={classes.CheckoutDiv}>
             {
                 showThankYou ?
                 <div>
-                    <ThankYou />
+                    <ThankYou getCartContent={getCartList} showThanks={showThanks}/>
                 </div> : null 
             
             }
