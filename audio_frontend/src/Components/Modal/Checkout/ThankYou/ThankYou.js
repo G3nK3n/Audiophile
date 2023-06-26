@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import classes from './ThankYou.module.css';
 import CheckMark from '../../../../icon-order-confirmation.svg';
 
+import { Link } from 'react-router-dom';
+
 
 const ThankYou = (props) => {
     
@@ -16,8 +18,8 @@ const ThankYou = (props) => {
             <div onClick={props.showThanks} className={classes.Backdrop}></div>
             <div className={classes.ThankYouBox}>
                 <img src={CheckMark} />
-                <h1>THANK YOU FOR YOUR ORDER</h1>
-                <p>You will receive an email confirmation shortly.</p>
+                <h1>THANK YOU <br/> FOR YOUR ORDER</h1>
+                <p className={classes.ThankYouBoxP}>You will receive an email confirmation shortly.</p>
                 <div className={classes.itemsList}>
                     {/* TEMP UNTIL WE GET DATABASE */}
                     { viewMoreButton ? props.getCartContent().map((content) => {
@@ -46,8 +48,9 @@ const ThankYou = (props) => {
                 </div>
                 <div className={classes.GrandTotalSection}>
                     <h5>Grand Total</h5>
-                    <p>WTV Price until database is here :)</p>
+                    <p>$ 5,446 </p>
                 </div>
+                <Link to={"/"}><p className={classes.PayButton}>BACK TO HOME</p></Link>
             </div>
         </div>
     )

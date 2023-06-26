@@ -37,6 +37,7 @@ const Checkout = () => {
             image: Img3
         }
 
+
     ]
 
     const [showThankYou, setShowThankYou] = useState(false);

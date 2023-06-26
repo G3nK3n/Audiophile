@@ -1,6 +1,7 @@
 .CheckoutDiv {
     background: #F2F2F2;
     padding-top: 79px;
+    padding-bottom: 140px;
 }
 
 .CheckoutContainer {
@@ -8,7 +9,10 @@
 }
 
 .GoBack {
-    /* padding-top: 79px; */
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
 }
 
 .TheForm {
